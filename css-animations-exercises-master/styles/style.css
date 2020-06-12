@@ -21,6 +21,13 @@ body {
   background: lightskyblue;
 }
 
+.frame:hover{
+  transition-delay: 1s;
+  transition-property: background-color #084063;
+  transition: 3s, color 1s;
+  background:#084063;
+}
+
 .mountains {
   display: flex;
   align-self: flex-end;
@@ -67,6 +74,12 @@ body {
   left: 300px;
 }
 
+.sun:active{
+  top:190px;
+  transition-property: background-color #c3b74b;
+  transition: 3s, color 5s;
+}
+
 .cloud {
     background:ivory;
     z-index: 2;
@@ -98,6 +111,10 @@ body {
     position: absolute;
     top: 100px;
     left: 380px;
+}
+
+.cloud, .cloud--2, .cloud--3:hover{
+  display:none;
 }
 
 .cloud__detail--1 {
