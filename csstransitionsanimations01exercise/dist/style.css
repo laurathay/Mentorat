@@ -15,10 +15,10 @@ Make the small ball on the right roll to the right when the large one hits it.
 
 */
 .anim:active .ball-two {
-  left: 150px;
-  transition-delay: .5s;
-  transition: left .5s ease-in;
-  transition-property: margin-left;
+  left: 450px;
+  transition: left .5s ease-in-out .5s;
+ /* transition-delay: 2.5s;*/
+ /* transition-property: margin-left;*/
 
   /* je comprends pas pourquoi ca marche pas...)
   /* Hint: manipulate margin-left to roll it, just like with the ball-one above. */
@@ -53,10 +53,14 @@ Necessary CSS Below-- no need to edit */
     width: 100px;
     height: 100px;
     background: red;
+  transition: width 2s ease-in-out; /*declarer la transition sur l'élément de base */
 
 }
 
 .rouge:hover {
     width: 300px;
-	transition: width 2s ease-in-out;
+}
+
+.rouge:after{
+
 }
