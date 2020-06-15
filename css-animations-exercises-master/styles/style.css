@@ -19,14 +19,46 @@ body {
   border: 3px solid darkgray;
   border-radius: 6px;
   background: lightskyblue;
+  animation-name: frame;
+  animation-duration: 10s;
+  animation-delay: 5s;
+
 }
 
-.frame:hover{
+@-webkit-keyframes frame {
+              0% {
+                background: lightskyblue;
+                -webkit-animation-timing-function: ease-in;
+              }
+              30%{
+                background: lightskyblue;
+                top: 60px;
+                -webkit-animation-timing-function: ease-in;
+              }
+              55% {
+                background: #5e74ed;
+                -webkit-animation-timing-function: ease-in;
+              }
+              80% {
+                background: #084063;
+                -webkit-animation-timing-function: ease-in;
+              }
+              95% {
+                background: #084063;
+                -webkit-animation-timing-function: ease-in;
+              }
+              100% {
+                background: lightskyblue;
+                -webkit-animation-timing-function: ease-out;
+              }
+}
+
+/*.frame:hover{
   transition-delay: 3s;
   transition-property: background-color #084063;
   transition: 3s, color 1s;
   background:#084063;
-}
+}*/
 
 .mountains {
   display: flex;
@@ -70,10 +102,11 @@ body {
   background: khaki;
   border-radius: 50%;
   position: absolute;
-  top: 60px;
+/*  top: 60px;*/ /* le point haut */
+  top:160px;
   left: 300px;
   animation-name: sun;
-  animation-duration: 3s;
+  animation-duration: 10s;
 }
 
 
@@ -81,12 +114,17 @@ body {
 
                     0% {
                       background: khaki;
-                      top: 60px;
+                      top: 160px;
+                      -webkit-animation-timing-function: ease-in;
+                    }
+                    30%{
+                      background: khaki;
+                      top: 100px;
                       -webkit-animation-timing-function: ease-in;
                     }
                     55% {
-                      top: 80px;
-                      background: #ffd800;
+                      top: 60px;
+                      background: khaki;
                       -webkit-animation-timing-function: ease-in;
                     }
                     80% {
@@ -105,12 +143,7 @@ body {
                       -webkit-animation-timing-function: ease-out;
                     }
 }
-/*@keyframes sun {
-  0%   {background-color: khaki;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
-}*/
+
 .cloud {
     background:ivory;
     z-index: 2;
@@ -120,6 +153,10 @@ body {
     position: absolute;
     top: 60px;
     left: 60px;
+    animation-name: cloud;
+    animation-duration: 10s;
+    animation-delay: 3s;
+
 }
 
 .cloud--2 {
@@ -131,6 +168,9 @@ body {
     position: absolute;
     top: 150px;
     left: 150px;
+    animation-name: cloud;
+    animation-duration: 10s;
+    animation-delay: 3s;
 }
 
 .cloud--3 {
@@ -142,11 +182,39 @@ body {
     position: absolute;
     top: 100px;
     left: 380px;
+    animation-name: cloud;
+    animation-duration: 12s;
+    animation-delay: 3s;
+
+}
+@-webkit-keyframes cloud {
+
+                    0% {
+                      opacity: 1;
+                      -webkit-animation-timing-function: ease-in;
+                    }
+                    30%{
+                      opacity: 1;
+                      -webkit-animation-timing-function: ease-in;
+                    }
+                    55% {
+                      opacity: 1;
+                      -webkit-animation-timing-function: ease-in;
+                    }
+                    80% {
+                      opacity: 0;
+                      -webkit-animation-timing-function: ease-in;
+                    }
+                    95% {
+                      opacity: 0;
+                      -webkit-animation-timing-function: ease-in;
+                    }
+                    100% {
+                      opacity: 1;
+                      -webkit-animation-timing-function: ease-out;
+                    }
 }
 
-.displaynone{
-display:none;
-}
 
 .cloud__detail--1 {
     content: " ";
