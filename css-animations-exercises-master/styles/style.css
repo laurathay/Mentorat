@@ -22,7 +22,7 @@ body {
 }
 
 .frame:hover{
-  transition-delay: 1s;
+  transition-delay: 3s;
   transition-property: background-color #084063;
   transition: 3s, color 1s;
   background:#084063;
@@ -72,14 +72,45 @@ body {
   position: absolute;
   top: 60px;
   left: 300px;
+  animation-name: sun;
+  animation-duration: 3s;
 }
 
-.sun:active{
-  top:190px;
-  transition-property: background-color #c3b74b;
-  transition: 3s, color 5s;
-}
 
+@-webkit-keyframes sun {
+
+                    0% {
+                      background: khaki;
+                      top: 60px;
+                      -webkit-animation-timing-function: ease-in;
+                    }
+                    55% {
+                      top: 80px;
+                      background: #ffd800;
+                      -webkit-animation-timing-function: ease-in;
+                    }
+                    80% {
+                      top: 100px;
+                      background: #e8a93e;
+                      -webkit-animation-timing-function: ease-in;
+                    }
+                    95% {
+                      top: 120px;
+                      background: #e87f3e;
+                      -webkit-animation-timing-function: ease-in;
+                    }
+                    100% {
+                      top:160px;
+                      background: #ba4e4e;
+                      -webkit-animation-timing-function: ease-out;
+                    }
+}
+/*@keyframes sun {
+  0%   {background-color: khaki;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}*/
 .cloud {
     background:ivory;
     z-index: 2;
@@ -113,8 +144,8 @@ body {
     left: 380px;
 }
 
-.cloud, .cloud--2, .cloud--3:hover{
-  display:none;
+.displaynone{
+display:none;
 }
 
 .cloud__detail--1 {
