@@ -102,11 +102,10 @@ body {
   background: khaki;
   border-radius: 50%;
   position: absolute;
-/*  top: 60px;*/ /* le point haut */
-  top:160px;
+  top: 60px;
   left: 300px;
   animation-name: sun;
-  animation-duration: 10s;
+  animation-duration: 15s;
 }
 
 
@@ -115,31 +114,37 @@ body {
                     0% {
                       background: khaki;
                       top: 160px;
+                      opacity:1;
                       -webkit-animation-timing-function: ease-in;
                     }
-                    30%{
+                    20%{
                       background: khaki;
                       top: 100px;
+                      opacity:1;
                       -webkit-animation-timing-function: ease-in;
                     }
-                    55% {
+                    50% {
                       top: 60px;
                       background: khaki;
+                      opacity:1;
                       -webkit-animation-timing-function: ease-in;
                     }
-                    80% {
+                    70% {
                       top: 100px;
                       background: #e8a93e;
+                      opacity:1;
                       -webkit-animation-timing-function: ease-in;
                     }
-                    95% {
-                      top: 120px;
+                    90% {
+                      top: 160px;
                       background: #e87f3e;
+                      opacity:1;
                       -webkit-animation-timing-function: ease-in;
                     }
                     100% {
                       top:160px;
-                      background: #ba4e4e;
+                      background: #e87f3e;
+                      opacity:0;
                       -webkit-animation-timing-function: ease-out;
                     }
 }
@@ -155,7 +160,7 @@ body {
     left: 60px;
     animation-name: cloud;
     animation-duration: 10s;
-    animation-delay: 3s;
+    animation-delay: 4s;
 
 }
 
@@ -170,7 +175,7 @@ body {
     left: 150px;
     animation-name: cloud;
     animation-duration: 10s;
-    animation-delay: 3s;
+    animation-delay: 4s;
 }
 
 .cloud--3 {
@@ -183,8 +188,8 @@ body {
     top: 100px;
     left: 380px;
     animation-name: cloud;
-    animation-duration: 12s;
-    animation-delay: 3s;
+    animation-duration: 15s;
+    animation-delay: 6s;
 
 }
 @-webkit-keyframes cloud {
@@ -193,11 +198,11 @@ body {
                       opacity: 1;
                       -webkit-animation-timing-function: ease-in;
                     }
-                    30%{
+                    20%{
                       opacity: 1;
                       -webkit-animation-timing-function: ease-in;
                     }
-                    55% {
+                    50% {
                       opacity: 1;
                       -webkit-animation-timing-function: ease-in;
                     }
@@ -205,12 +210,12 @@ body {
                       opacity: 0;
                       -webkit-animation-timing-function: ease-in;
                     }
-                    95% {
+                    90% {
                       opacity: 0;
                       -webkit-animation-timing-function: ease-in;
                     }
                     100% {
-                      opacity: 1;
+                      opacity: 0;
                       -webkit-animation-timing-function: ease-out;
                     }
 }
@@ -225,6 +230,7 @@ body {
     border-radius: 50%;
     position: absolute;
     bottom: 10px;
+
 }
 
 
@@ -238,6 +244,7 @@ body {
     position: absolute;
     bottom: 10px;
     left: 35px;
+
 }
 
 .cloud__detail--3 {
@@ -250,6 +257,7 @@ body {
     position: absolute;
     bottom: 0px;
     left: 60px;
+
 }
 
 .cloud__detail--4 {
@@ -262,4 +270,5 @@ body {
     position: absolute;
     bottom: 0px;
     left: -10px;
+
 }
