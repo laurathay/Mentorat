@@ -1,1 +1,3 @@
-document.querySelector("").onclick = function() { alert("moot!"); }; 
+//window = { alert("moot!"); }; 
+
+alert("moot!");

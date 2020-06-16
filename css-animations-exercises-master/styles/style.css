@@ -25,7 +25,11 @@ body {
 
 }
 
-@-webkit-keyframes frame {
+.top{
+
+}
+
+/*@-webkit-keyframes frame {
               0% {
                 background: lightskyblue;
                 -webkit-animation-timing-function: ease-in;
@@ -51,7 +55,7 @@ body {
                 background: lightskyblue;
                 -webkit-animation-timing-function: ease-out;
               }
-}
+}*/
 
 /*.frame:hover{
   transition-delay: 3s;
@@ -106,48 +110,44 @@ body {
   left: 300px;
   animation-name: sun;
   animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+  transition: top 2s ease-in-out;
 }
 
 
-@-webkit-keyframes sun {
+/*@-webkit-keyframes sun {
 
                     0% {
                       background: khaki;
                       top: 160px;
                       opacity:1;
-                      -webkit-animation-timing-function: ease-in;
                     }
                     20%{
                       background: khaki;
                       top: 100px;
                       opacity:1;
-                      -webkit-animation-timing-function: ease-in;
                     }
                     50% {
                       top: 60px;
                       background: khaki;
                       opacity:1;
-                      -webkit-animation-timing-function: ease-in;
                     }
                     70% {
                       top: 100px;
                       background: #e8a93e;
                       opacity:1;
-                      -webkit-animation-timing-function: ease-in;
                     }
                     90% {
                       top: 160px;
                       background: #e87f3e;
                       opacity:1;
-                      -webkit-animation-timing-function: ease-in;
                     }
                     100% {
                       top:160px;
                       background: #e87f3e;
                       opacity:0;
-                      -webkit-animation-timing-function: ease-out;
                     }
-}
+}*/
 
 .cloud {
     background:ivory;
@@ -189,36 +189,31 @@ body {
     left: 380px;
     animation-name: cloud;
     animation-duration: 15s;
-    animation-delay: 6s;
+    animation-delay: 4s;
+    -webkit-animation-timing-function: ease-in-out;
 
 }
-@-webkit-keyframes cloud {
+/*@-webkit-keyframes cloud {
 
                     0% {
                       opacity: 1;
-                      -webkit-animation-timing-function: ease-in;
                     }
                     20%{
                       opacity: 1;
-                      -webkit-animation-timing-function: ease-in;
                     }
                     50% {
                       opacity: 1;
-                      -webkit-animation-timing-function: ease-in;
                     }
                     80% {
                       opacity: 0;
-                      -webkit-animation-timing-function: ease-in;
                     }
                     90% {
                       opacity: 0;
-                      -webkit-animation-timing-function: ease-in;
                     }
                     100% {
                       opacity: 0;
-                      -webkit-animation-timing-function: ease-out;
                     }
-}
+}*/
 
 
 .cloud__detail--1 {

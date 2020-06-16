@@ -52,6 +52,26 @@
     </div>
 
   <script href="script.js">
+    /*  var sun = document.querySelectorAll(".sun")*/
+      function SunAnimation(){
+        var sun = document.querySelector(".sun")
+        sun.style.top = "160px";
+      }
+
+      function FrameAnimation(){
+        var frame = document.querySelector(".frame")
+        frame.style.backgroundColor = "#5e74ed";
+      }
+
+      function CloudAnimation(){
+        var frame = document.querySelector(".cloud")
+        frame.style.opacity = "0";
+      }
+      setTimeout(CloudAnimation, 5000);
+
+      setTimeout(FrameAnimation, 5000);
+
+      setInterval(SunAnimation, 2000);
 
   </script>
 
