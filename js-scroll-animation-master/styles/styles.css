@@ -11,11 +11,27 @@ html, body {
 }
 
 .part-1 {
-    background: white;
-    background-image: linear-gradient(45deg, white);
-    transform: skewY(-45deg);
+  z-index: 3;
     position: absolute;
-    z-index: 5;
-/*   width: 125em; pour faire la diagonale blanche*/
-/*    height: 50em;*/
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, transparent 40%, white 40%, white 60%, transparent 60%, transparent 100%);
+}
+
+.part-2 {
+  z-index: 3;
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, transparent 40%, white 40%, white 60%, transparent 60%, transparent 100%);
+}
+
+.part-3 {
+  z-index: 3;
+    position: absolute;
+    top: 200vh;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, transparent 40%, white 40%, white 60%, transparent 60%, transparent 100%);
 }
