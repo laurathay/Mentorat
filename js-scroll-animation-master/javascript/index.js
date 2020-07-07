@@ -34,6 +34,7 @@ let lastScrollTop = 0;
 function handleScroll() {
     let st = window.pageYOffset || document.documentElement.scrollTop;
     console.log(st);
+    console.log(etape);
     if (st > lastScrollTop && etape == 1){
       etape = 2
     /*  window.removeEventListener("scroll", handleScroll)*/
@@ -42,6 +43,8 @@ function handleScroll() {
         left: 0,
         behavior: 'smooth'
       })
+      var element = document.getElementById("animated-title")
+      element.classList.add("animated-title");
     }else if (st < lastScrollTop && etape == 2){
       etape = 1
         window.scrollTo({
@@ -49,13 +52,13 @@ function handleScroll() {
          left: 0,
          behavior: 'smooth'
        })
-    }else if (st < lastScrollTop && etape == 3){ //j'ai rajouté cette partie mais pas sûre
+  /*  }else if (st < lastScrollTop && etape == 3){ //j'ai rajouté cette partie mais pas sûre
       etape = 3
       window.scrollTo({
         top: 1100,
         left: 0,
         behavior:'smooth'
-      })
+      })*/
     } else {
         console.log('up');
     }
