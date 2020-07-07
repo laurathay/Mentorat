@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
 html, body {
     margin: 0;
 }
@@ -34,4 +37,52 @@ html, body {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(-45deg, transparent 40%, white 40%, white 60%, transparent 60%, transparent 100%);
+}
+
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 80%;
+  position: absolute;
+   top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vmin;
+}
+
+h1 {
+  font-weight: 100;
+  transition-delay: 0.3s;
+}
+
+h2 {
+  margin-top: -6px;
+  font-weight: 300;
+  transition-delay: 0.8s;
+}
+
+ .animated-title > .text-top {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+
+.animated-title > .text-bottom {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
 }
