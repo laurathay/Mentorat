@@ -43,8 +43,12 @@ function handleScroll() {
         left: 0,
         behavior: 'smooth'
       })
-      var element = document.getElementById("animated-title")
-      element.classList.add("animated-title");
+      var secondTitle = document.getElementById("animated-title2")
+      secondTitle.classList.add("animated-title");
+
+      var firstTitle = document.getElementById("animated-title")
+      firstTitle.classList.remove("animated-title");
+
     }else if (st < lastScrollTop && etape == 2){
       etape = 1
         window.scrollTo({
@@ -52,6 +56,11 @@ function handleScroll() {
          left: 0,
          behavior: 'smooth'
        })
+       var secondTitle = document.getElementById("animated-title2")
+       secondTitle.classList.remove("animated-title");
+
+       var firstTitle = document.getElementById("animated-title")
+       firstTitle.classList.add("animated-title");
   /*  }else if (st < lastScrollTop && etape == 3){ //j'ai rajouté cette partie mais pas sûre
       etape = 3
       window.scrollTo({
