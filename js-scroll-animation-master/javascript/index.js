@@ -49,13 +49,13 @@ function handleScroll() {
          left: 0,
          behavior: 'smooth'
        })
-    // }else if (st < lastScrollTop && etape == 3){ //j'ai rajouté cette partie mais pas sûre
-    //   etape = 3
-    //   window.scrollTo({
-    //     top: height/3,
-    //     left: 0,
-    //     behavior:'smooth'
-    //   })
+    }else if (st < lastScrollTop && etape == 3){ //j'ai rajouté cette partie mais pas sûre
+      etape = 3
+      window.scrollTo({
+        top: 1100,
+        left: 0,
+        behavior:'smooth'
+      })
     } else {
         console.log('up');
     }

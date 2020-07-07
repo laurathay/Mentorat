@@ -50,6 +50,7 @@ html, body {
   width: 100vmin;
 }
 
+
 h1 {
   font-weight: 100;
   transition-delay: 0.3s;
@@ -61,7 +62,7 @@ h2 {
   transition-delay: 0.8s;
 }
 
- .animated-title > .text-top {
+  .animated-title > .text-top {
   animation: showTopText 1s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
