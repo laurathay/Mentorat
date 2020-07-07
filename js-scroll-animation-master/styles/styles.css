@@ -40,13 +40,16 @@ html, body {
 }
 
 .animated-title {
+  transform: translate(-50%, -50%);
+}
+
+.position{
   color: #222;
   font-family: Roboto, Arial, sans-serif;
   height: 90vmin;
-  left: 80%;
   position: absolute;
-   top: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 80%;
   width: 100vmin;
 }
 
