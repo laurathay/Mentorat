@@ -37,14 +37,45 @@ section {
   }
 
   .burger{
-    fill: yellow;
+    stroke: pink;
+    }
+
+  .burger::before, .burger::after{
+    transform:translateY(-8px);
   }
 
-  .burger:active{
-
+  .burger-cross::before, .burger-cross::after{
+    transform-origin: 50% 50%;
   }
+
+  .burger-cross{
+    transition: fill 0.5s, transform 0.5s;
+    position: relative;
+   z-index: 1;
+   fill: pink;
+   stroke-width: 1px;
+   stroke: yellow;
+   stroke-dashoffset: 170;
+   stroke-dasharray: 170;
+   transition: stroke-dashoffset 0.5s;
+  }
+
+
+  .burger-cross.is-opened{
+    stroke-dashoffset: 0;
+  }
+
+  .burger-cross.is-opened::before{
+    transform: translate(0) rotate(45deg);
+  }
+
+  .burger-cross.is-opened::after{
+    transform: translate(0) rotate(-45deg);
+  }
+
 
   .active:hover{
     stroke: pink;
     stroke-width : 3px;
+    fill: yellow;
   }
