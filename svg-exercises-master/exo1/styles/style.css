@@ -22,8 +22,8 @@ section {
     border-radius: 20px;
     padding: 20px;
   }
-  
-  
+
+
   section div {
     display: flex;
     align-items: center;
@@ -31,4 +31,20 @@ section {
     width: 300px;
     padding: 20px 0;
   }
-  
+
+  .couleur{
+    background-color: pink;
+  }
+
+  .burger{
+    fill: yellow;
+  }
+
+  .burger:active{
+
+  }
+
+  .active:hover{
+    stroke: pink;
+    stroke-width : 3px;
+  }
