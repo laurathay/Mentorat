@@ -33,14 +33,64 @@ section {
   }
 
   .couleur{
-    background-color: pink;
+    fill: pink;
+    stroke: yellow;
+    fill-rule:evenodd;
   }
 
   .burger{
+    rotate:(45deg);
     stroke: pink;
     }
 
+    .part-1{
+      transform:rotate(45deg);
+      transform-origin: 5px 10px; //pour ajuster
+      animation-name: part-1;
+      animation-duration: 2s;
+    }
+
+@keyframes part-1 {
+  0%{
+    transform:rotate(0deg);
+  } 100%{
+    transform:rotate(45deg);
+  }
+}
+  .part-2{
+    opacity: 0;
+    animation-name: part-2;
+    animation-duration: 2s;
+  }
+
+@keyframes part-2 {
+
+  0% {
+    opacity:1;
+  } 50% {
+    opacity: 0.5;
+  } 100%{
+    opacity:0;
+  }
+
+}
+
+  .part-3{
+    transform: rotate(-45deg);
+    transform-origin: 5px 14px; //pour ajuster
+
+    animation-name: part-3;
+  }
+
+  @keyframes part-2 {
+    0%{
+      transform:rotate(0deg);
+    } 100%{
+      transform:rotate(45deg);
+    }
+  }
   .burger::before, .burger::after{
+    content:" ";
     transform:translateY(-8px);
   }
 
@@ -55,7 +105,7 @@ section {
    fill: pink;
    stroke-width: 1px;
    stroke: yellow;
-   stroke-dashoffset: 170;
+   /* stroke-dashoffset: 170; */
    stroke-dasharray: 170;
    transition: stroke-dashoffset 0.5s;
   }
